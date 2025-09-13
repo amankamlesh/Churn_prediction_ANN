@@ -1,104 +1,95 @@
-🏦 Customer Churn Prediction
+# 🏦 Customer Churn Prediction  
 
-This project is a machine learning web application built with Streamlit to predict customer churn in a bank. It uses a trained deep learning model (model.h5) to estimate the probability of a customer leaving the bank based on demographic and financial features.
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)  
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.0+-brightgreen.svg)](https://streamlit.io/)  
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.20-orange.svg)](https://www.tensorflow.org/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 
-🚀 Features
+A **machine learning web app** built with **Streamlit** and **TensorFlow** that predicts whether a bank customer will churn or stay.  
 
-Interactive web interface using Streamlit
+---
 
-Input fields for customer details (credit score, age, balance, tenure, etc.)
+## 🌐 Live Demo  
+🚀 **[Click Here to Try the App](https://amankamlesh-qybn4appeezvidh3cb7a9nn.streamlit.app/)**  
 
-Preprocessing with LabelEncoder, OneHotEncoder, and StandardScaler
+---
 
-Trained deep learning model with TensorFlow/Keras
+## ✨ Features  
+✅ User-friendly Streamlit interface  
+✅ Takes customer details as input  
+✅ Preprocessing with saved encoders & scaler  
+✅ Predicts **churn probability**  
+✅ Displays a clear decision:  
+- ⚠️ Likely to Churn  
+- ✅ Not Likely to Churn  
 
-Outputs the churn probability and a decision (Likely to Churn / Not Likely to Churn)
+---
 
-🌐 Live Demo
-
-👉 Try the deployed app here: Customer Churn Prediction
-
-📂 Project Structure
+## 📂 Project Structure  
+```
+📦 customer-churn-prediction
 ├── app.py                  # Streamlit web app
 ├── experiments.ipynb       # Model training & experiments
 ├── prediction.ipynb        # Prediction testing
 ├── model.h5                # Trained deep learning model
-├── onehot_encoder_geo.pkl  # Saved OneHotEncoder for Geography
-├── label_encoder_gender.pkl # Saved LabelEncoder for Gender
-├── scaler.pkl              # Saved StandardScaler
-├── requirements.txt        # Project dependencies
+├── onehot_encoder_geo.pkl  # OneHotEncoder for Geography
+├── label_encoder_gender.pkl # LabelEncoder for Gender
+├── scaler.pkl              # StandardScaler
+├── requirements.txt        # Dependencies
+```
 
-⚙️ Installation
+---
 
-Clone this repository:
+## ⚙️ Installation  
 
+```bash
+# Clone the repo
 git clone https://github.com/your-username/customer-churn-prediction.git
 cd customer-churn-prediction
 
-
-Create a virtual environment and activate it:
-
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # For Linux/Mac
-venv\Scripts\activate     # For Windows
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
-
-Install dependencies:
-
+# Install dependencies
 pip install -r requirements.txt
 
-▶️ Usage
-
-Run the Streamlit app locally:
-
+# Run app
 streamlit run app.py
+```
 
+---
 
-Open the link shown in the terminal (usually http://localhost:8501) in your browser.
+## 📊 Example Workflow  
 
-📊 Example Workflow
+1️⃣ Select **Geography** & **Gender**  
+2️⃣ Enter details like **Credit Score, Age, Balance, Tenure**  
+3️⃣ Click **Predict**  
+4️⃣ Get churn probability + final prediction  
 
-Select customer Geography and Gender
+---
 
-Enter Credit Score, Age, Balance, Tenure, etc.
+## 📸 Preview  
 
-Click Submit to see the churn probability.
+*(Add screenshots of your deployed app here for a professional look)*  
 
-The app will display:
+Example:  
+![App Screenshot](assets/demo.png)  
 
-Churn Probability (0–1)
+---
 
-Prediction Result:
+## 🧪 Model Training  
+- Developed in `experiments.ipynb`  
+- Deep learning model saved as `model.h5`  
+- Encoders (`.pkl` files) ensure consistent preprocessing  
 
-✅ Not Likely to Churn
+---
 
-⚠️ Likely to Churn
+## 🤝 Contributing  
+Contributions are welcome! Open an issue or create a PR to improve the project.  
 
-📦 Requirements
+---
 
-See requirements.txt
-:
-
-TensorFlow 2.20
-
-Streamlit
-
-Pandas, NumPy, Scikit-learn
-
-Matplotlib
-
-🧪 Model Training
-
-experiments.ipynb contains model development and training experiments.
-
-The trained model is saved as model.h5.
-
-Encoders and scaler are stored as .pkl files for consistent preprocessing.
-
-🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
-
-📜 License
-
-This project is licensed under the MIT License.
+## 📜 License  
+This project is licensed under the **MIT License**.  
