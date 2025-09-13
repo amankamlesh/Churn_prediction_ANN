@@ -72,10 +72,11 @@ streamlit run app.py
 
 ## 📸 Preview  
 
-*(Add screenshots of your deployed app here for a professional look)*  
+  
 
-Example:  
-![App Screenshot](assets/demo.png)  
+  
+![App Screenshot](<img width="949" height="826" alt="Screenshot 2025-09-14 014505" src="https://github.com/user-attachments/assets/f155f6c7-6b28-4f11-9be6-22ab5f340283" />
+)  
 
 ---
 
